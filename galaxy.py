@@ -50,7 +50,7 @@ def main():
                             red_value, green_value, blue_value = retrieve_rgb(calculate_temperature(row))
 
                             #write cartesian coordinates and rgb colorisation of star to a new row in xyz file
-                            values = [x_value, y_value, z_value, str(red_value), str(green_value), str(blue_value)]
+                            values = [x_value, y_value, z_value, str(red_value), str(green_value), str(blue_value), '\n']
                             current_write_file.write(' '.join(values))
                             
                             #print to console if no exceptions occured for the star
